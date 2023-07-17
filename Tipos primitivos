@@ -1,0 +1,34 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package c.tiposprimitivos;
+
+import java.util.Scanner;
+
+
+/**
+ *
+ * @author ricardohenrique
+ */
+public class CTiposPrimitivos {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner teclado = new Scanner (System.in);
+        System.out.print("Digite o nome do Aluno: ");
+        String nome = teclado.nextLine();
+        System.out.print("Digite a nota do Aluno: ");
+        float nota = teclado.nextFloat();
+        
+        System.out.printf("A nota de %s é %.2f! \n",nome, nota);
+        //%s Classe String
+        //%f para colocar a nota dentro das " "
+        //.2 entre o % e f, para finalizar com 2 casas decimais 
+        // \n para seguir para próxima linha = println
+    }
+    
+}
